@@ -25,6 +25,27 @@
         echo '<li>$var7 es válida porque inicia con una letra.</li>';
         echo '<li>$_element1 es válida porque inicia con guión bajo.</li>';
         echo '</ul>';
+
+        echo "<br>";
+        echo "<br>";
+        echo "<h2>Ejericio 2</h2>";
+        echo " <p>  Proporcionar los valores de $ a, $ b, $ c como sigue:</p> ";
+        $a =  "ManejadorSQL";
+        $b = 'MySQL';
+        $c = &$a;
+
+        echo "<h2> Ahora muestra el contenido de cada variable </h2>";
+        
+
+        
+
+        echo ($a = "ManejadorSQL"); echo "<br>";
+        echo ($b = "MySQL"); echo "<br>";
+        echo ($c);
+
+
     ?>
+
+
 </body>
 </html>
