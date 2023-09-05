@@ -33,15 +33,32 @@
         $a =  "ManejadorSQL";
         $b = 'MySQL';
         $c = &$a;
+        $a = "PHP server";
+        $b = &$a;
 
         echo "<h2> Ahora muestra el contenido de cada variable </h2>";
         
-
-        
-
         echo ($a = "ManejadorSQL"); echo "<br>";
         echo ($b = "MySQL"); echo "<br>";
         echo ($c);
+        echo ($a = "PHP Server"); echo "<br>";
+        echo ($b); echo "<br>";
+
+        echo "<h2>Agrega al código actual las siguientes asignaciones: </h2>";
+        echo "
+        <p>
+        $a = “PHP server”; 
+        $b = &
+        $a;
+        </p>";
+
+        echo "<h2>Vuelve a mostrar el contenido de cada uno </h2>";
+        echo ($a = "PHP Server"); echo "<br>";
+        echo ($b); echo "<br>";
+        echo "<p>Se agregaron nuevas asignaciones</p>";
+    
+
+
 
 
     ?>
