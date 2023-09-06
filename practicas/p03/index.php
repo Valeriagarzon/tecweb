@@ -57,6 +57,34 @@
         echo ($b); echo "<br>";
         echo "<p>Se agregaron nuevas asignaciones</p>";
     
+        echo "<h2>
+         Muestra el contenido de cada variable inmediatamente 
+         después de cada asignación, verificar la evolución del tipo de estas variables 
+         (imprime todos los componentes de los arreglo)
+            </h2>";
+
+            $a = "PHP5";
+            echo "\$a = \"$a\"; Tipo: " . gettype($a) . "\n"; echo "<br>";
+            $z[] = &$a;
+            echo "\$z[] = &\$a; Tipo de \$z: " . gettype($z) . ", Tipo de \$z[0]: " . gettype($z[0]) . "\n"; echo "<br>";
+            $b = "5a version de PHP";
+            echo "\$b = \"$b\"; Tipo: " . gettype($b) . "\n";  echo "<br>";
+          @  $c = $b * 10;
+            echo "\$c = \$b * 10; Tipo: " . gettype($c) . "\n";  echo "<br>";
+            $a .= $b;
+            echo "\$a .= \$b; Tipo: " . gettype($a) . "\n";  echo "<br>";
+            $b *= $c;
+            echo "\$b *= \$c; Tipo: " . gettype($b) . "\n";  echo "<br>";
+            $z[0] = "MySQL";
+            echo "\$z[0] = \"MySQL\"; Tipo de \$z[0]: " . gettype($z[0]) . "\n";  echo "<br>";
+
+
+
+
+
+
+
+
 
 
 
