@@ -146,7 +146,24 @@
                 echo var_export($c, true); "<br>";
                 echo var_export($e, true); "<br>";
                 
+                echo "<h2> Ejercicio 7 </h2>";
+                echo "<p>
+                Usando la variable predefinida $ _SERVER, determina lo siguiente:   </p>";
 
+                echo "<p> a. La versión de Apache y PHP,   </p>";
+                $server_software = $_SERVER['SERVER_SOFTWARE'];
+                $php_version = phpversion();
+                echo "Versión de Apache: $server_software\n";
+                echo "Versión de PHP: $php_version\n";
+                
+                echo "<p> b. El nombre del sistema operativo (servidor), </p>";
+                $server_os = php_uname('s');
+                echo "Nombre del sistema operativo del servidor: $server_os\n";
+                
+                echo "<p> c. El idioma del navegador (cliente). </p>"; 
+                $client_language = $_SERVER['HTTP_ACCEPT_LANGUAGE'];
+                echo "Idioma del navegador del cliente: $client_language\n";
+        
     ?>
 
 
