@@ -28,6 +28,7 @@
 
         echo "<br>";
         echo "<br>";
+
         echo "<h2>Ejericio 2</h2>";
         echo " <p>  Proporcionar los valores de $ a, $ b, $ c como sigue:</p> ";
         $a =  "ManejadorSQL";
@@ -98,16 +99,25 @@
             $z[0] = "MySQL"; $GLOBALS['z'] = $z;
             echo "\$z[0] = \"MySQL\"; Tipo de \$z[0]: " . gettype($z[0]) . "\n"; echo "<br>";
 
+            echo "<h2>
+            Dar el valor de las variables $ a, $ b, $ c al final del siguiente script: 
+            </h2>";
+            echo "<p>
+            $ a = “7 personas”; 
+            $ b = (integer) $ a; 
+            $ a = “9E3”; 
+            $ c = (double) $ a; 
+            </p>";
 
-
-
-
-
-
-
-
-
-
+             // $a = "7 personas";
+           // $b = (integer) $a;
+            //$a = "9E3";
+           // $c = (double) $a; 
+            
+            echo "\$ a: $ a\n"; echo " Valor de $ a: 9E3 ";
+            echo "\$ b: $ b\n"; echo " Valor de $ b: 9000";
+            echo "\$ c: $ c\n"; echo " Valor de $ c: 9000 ";
+            
 
     ?>
 
