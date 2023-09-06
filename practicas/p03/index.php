@@ -60,7 +60,7 @@
         echo "<h2>
          Muestra el contenido de cada variable inmediatamente 
          después de cada asignación, verificar la evolución del tipo de estas variables 
-         (imprime todos los componentes de los arreglo)
+         (imprime todos los componentes de los arreglos)
             </h2>";
 
             $a = "PHP5";
