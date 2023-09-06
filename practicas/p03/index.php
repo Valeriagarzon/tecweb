@@ -37,7 +37,7 @@
         $a = "PHP server";
         $b = &$a;
 
-        echo "<h2> Ahora muestra el contenido de cada variable </h2>";
+        echo "<h3> Ahora muestra el contenido de cada variable </h3>";
         
         echo ($a = "ManejadorSQL"); echo "<br>";
         echo ($b = "MySQL"); echo "<br>";
@@ -45,7 +45,7 @@
         echo ($a = "PHP Server"); echo "<br>";
         echo ($b); echo "<br>";
 
-        echo "<h2>Agrega al código actual las siguientes asignaciones: </h2>";
+        echo "<p>Agrega al código actual las siguientes asignaciones: </p>";
         echo "
         <p>
         $a = “PHP server”; 
@@ -53,16 +53,17 @@
         $a;
         </p>";
 
-        echo "<h2>Vuelve a mostrar el contenido de cada uno </h2>";
+        echo "<p>Vuelve a mostrar el contenido de cada uno </p>";
         echo ($a = "PHP Server"); echo "<br>";
         echo ($b); echo "<br>";
-        echo "<p>Se agregaron nuevas asignaciones</p>";
+        echo "<h3>Se agregaron nuevas asignaciones</h3>";
     
-        echo "<h2>
+       echo "<h2> Ejercicio 3 </h2>";
+        echo "<p>
          Muestra el contenido de cada variable inmediatamente 
          después de cada asignación, verificar la evolución del tipo de estas variables 
          (imprime todos los componentes de los arreglos)
-            </h2>";
+            </p>";
 
             $a = "PHP5";
             echo "\$a = \"$a\"; Tipo: " . gettype($a) . "\n"; echo "<br>";
@@ -79,10 +80,11 @@
             $z[0] = "MySQL";
             echo "\$z[0] = \"MySQL\"; Tipo de \$z[0]: " . gettype($z[0]) . "\n";  echo "<br>";
 
-            echo "<h2>
+            echo "<h2> Ejercicio 4 </h2>";
+            echo "<p>
             Lee y muestra los valores de las variables del ejercicio anterior, pero ahora con la ayuda de 
              la matriz $ GLOBALS o del modificador global de PHP. 
-               </h2>";
+               <p>";
 
                $a = "PHP5"; $GLOBALS['a'] = $a;
             echo "\$a = \"$a\"; Tipo: " . gettype($a) . "\n"; echo "<br>";
@@ -99,9 +101,10 @@
             $z[0] = "MySQL"; $GLOBALS['z'] = $z;
             echo "\$z[0] = \"MySQL\"; Tipo de \$z[0]: " . gettype($z[0]) . "\n"; echo "<br>";
 
-            echo "<h2>
+            echo "<h2> Ejercicio 5 </h2>";
+            echo "<p>
             Dar el valor de las variables $ a, $ b, $ c al final del siguiente script: 
-            </h2>";
+            </p>";
             echo "<p>
             $ a = “7 personas”; 
             $ b = (integer) $ a; 
@@ -118,6 +121,31 @@
             echo "\$ b: $ b\n"; echo " Valor de $ b: 9000";
             echo "\$ c: $ c\n"; echo " Valor de $ c: 9000 ";
             
+           echo "<h2> Ejercicio 6 </h2>";
+            echo "<p>
+            Dar y comprobar el valor booleano de las variables $ a, $ b, $ c, $ d, $ e y $ f 
+            y muéstralas  usando la función var_dump(<datos>).  
+            </p>";
+            $a = "0";
+            $b = "TRUE";
+            $c = FALSE;
+            $d = ($a OR $b);
+            $e = ($a AND $c);
+            $f = ($a XOR $b); 
+            var_dump($a); echo "<br>";
+            var_dump($b); echo "<br>";
+            var_dump($c); echo "<br>";
+            var_dump($d); echo "<br>";
+            var_dump($e); echo "<br>";
+            var_dump($f); echo "<br>";
+            
+           echo " <p> 
+           Después investiga una función de PHP que permita transformar el valor booleano de
+            $ c y $ e  en uno que se pueda mostrar con un echo: 
+                </p>";
+                echo var_export($c, true); "<br>";
+                echo var_export($e, true); "<br>";
+                
 
     ?>
 
